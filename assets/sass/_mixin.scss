@@ -1,4 +1,18 @@
-@mixin contenedor(){
-	margin: 0 auto;
-	padding: 20px;
+@mixin botones(){
+	padding: 10px 25px;
+	border-radius: 5px;
+	height: auto;
+	background-color: $color-primario;
+}
+@mixin texto-parrafo-uno(){
+	color: $color-texto-primario;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 300;
+}
+@mixin texto-titulos(){
+	font-family: $fuente-serif;
+	color: #3c4858;
+	font-size: 20px;
+	font-weight: bold;
 }

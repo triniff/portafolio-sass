@@ -6780,11 +6780,16 @@ nav {
   position: absolute;
   top: 0px;
   z-index: 1000;
-  border: transparent; }
+  border: transparent;
+  padding: 0 40px;
+  box-shadow: none; }
   nav .brand-logo {
     font-size: 20px; }
   nav ul a {
-    font-size: 12px; }
+    font-size: 10px; }
+  nav .btn, nav .btn-large {
+    font-size: 10px;
+    background-color: #e91e63; }
 
 .slider .slides {
   height: 80vh !important; }
@@ -6797,10 +6802,38 @@ nav {
 .slider .slides h5 {
   font-size: 20px;
   font-family: "PT Serif", serif; }
+.slider .slides .btn, .slider .slides .btn-large {
+  margin-top: 20px;
+  padding: 20px;
+  padding: 10px 25px;
+  border-radius: 5px;
+  height: auto;
+  background-color: #e91e63; }
 
 .seccion-central {
   z-index: 9000;
   position: relative;
-  background-color: #fff; }
+  background-color: #fff;
+  border-radius: 10px;
+  height: 800px;
+  margin: 0 40px; }
+
+.seccion-uno {
+  padding: 80px 0;
+  color: #a1a1a1;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300; }
+  .seccion-uno h4 {
+    font-family: "PT Serif", serif;
+    color: #3c4858;
+    font-size: 20px;
+    font-weight: bold; }
+  .seccion-uno .uno {
+    color: #e91e63; }
+  .seccion-uno .dos {
+    color: #00bcd4; }
+  .seccion-uno .tres {
+    color: #4caf50; }
 
 /*# sourceMappingURL=main.css.map */
