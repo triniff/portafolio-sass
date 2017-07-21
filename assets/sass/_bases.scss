@@ -1,0 +1,49 @@
+body{
+	font-family: $fuente-sans-serif;
+}
+nav{
+	background-color: transparent;
+	position: absolute;
+    top: 0px;
+    z-index: 1000;
+    border: transparent;
+
+    .brand-logo{
+    	font-size: 20px
+    }
+    ul{
+        a{
+    		font-size: 12px;
+        }
+    }
+}
+.slider{
+	.slides {
+		height: 80vh !important;
+	}
+}
+
+.slider {
+	.slides {
+		h3{
+			font-size: 60px;
+			font-weight: 900;
+			padding-top: 80px;
+		}
+	}
+}
+
+.slider{ 
+	.slides{ 
+			h5{
+				font-size: 20px;
+				font-family: $fuente-serif;
+		}
+	}
+}
+
+.seccion-central{
+	z-index: 9000;
+	position: relative;
+	background-color: #fff;
+}
