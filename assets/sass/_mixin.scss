@@ -1,18 +1,31 @@
+@mixin container-esp(){
+	width: 100%;
+	padding: 80px 50px;
+	color: $color-texto-primario;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 300;
+}
 @mixin botones(){
 	padding: 10px 25px;
 	border-radius: 5px;
 	height: auto;
 	background-color: $color-primario;
 }
-@mixin texto-parrafo-uno(){
-	color: $color-texto-primario;
-	text-align: center;
-	font-size: 15px;
-	font-weight: 300;
-}
+
 @mixin texto-titulos(){
 	font-family: $fuente-serif;
 	color: #3c4858;
 	font-size: 20px;
 	font-weight: bold;
+}
+@mixin container-fondo(){
+	padding: 50px 50px 10px;
+	color: #fff;
+	width: 100%;
+	h4{
+		font-family: $fuente-serif;
+		font-weight: bold;
+		font-size: 40px;
+	}
 }
