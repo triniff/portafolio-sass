@@ -15,7 +15,7 @@
 
 @mixin texto-titulos(){
 	font-family: $fuente-serif;
-	color: #3c4858;
+	color: $color-esp-titulos;
 	font-size: 20px;
 	font-weight: bold;
 }
@@ -28,4 +28,20 @@
 		font-weight: bold;
 		font-size: 40px;
 	}
+}
+@mixin seccion-gris(){
+	background-color: #F0F0F0;
+	text-align: center;
+	padding: 80px 50px;
+	h1{
+		@include texto-titulos();
+		font-size: 40px;
+	}
+	p{
+		color: $color-texto-primario;
+		text-align: center;
+		font-size: 15px;
+		font-weight: 300;
+	}
+
 }

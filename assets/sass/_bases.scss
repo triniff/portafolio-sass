@@ -79,7 +79,7 @@ nav{
 }
 .seccion-dos{
 	@include container-fondo();
-			background: url('../img/img_city.jpg');
+		background: url('../img/img_city.jpg');
 		background-size: cover;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
@@ -91,6 +91,50 @@ nav{
 			margin: 0 auto;
 			padding-top: 30px;
 			text-align: center;
+		}
+	}
+}
+
+.seccion-tres{
+	@include seccion-gris();
+	.z-depth-2{
+		background-color: #fff;
+		border-radius: 10px;
+		max-width: 310px;
+		margin: 60px 20px 10px;
+		.row{
+			img{
+					width: 100%;
+					margin: 0 auto;
+					padding: 0;
+					text-align: center;
+					margin-top: -40px;
+			}
+		}
+	}
+	.z-depth-2::last-child{
+		margin: 60px 0;
+	}
+
+	h6{
+		color: $color-primario;
+		font-size: 14px;
+		padding: 10px;
+	}
+	h5{
+		@include texto-titulos();
+	}
+	.s6{
+		p{
+			color: $color-esp-titulos;
+			text-align: left;
+			font-size: 20px;
+			margin: 10px 0px;
+		}
+		i{
+			float: right;
+			margin: 10px 0px;
+			color: $color-texto-primario;
 		}
 	}
 }
