@@ -1,5 +1,6 @@
 body{
 	font-family: $fuente-sans-serif;
+	background-color: #E1E1E1;
 }
 nav{
 	background-color: transparent;
@@ -62,7 +63,7 @@ nav{
 	margin: 0 40px;
 }
 
-.seccion-uno{
+.responsive{
 	@include container-esp();
 	h4{
 		@include texto-titulos();
@@ -83,12 +84,16 @@ nav{
 		color: $color-terciario;
 	}
 }
-.seccion-dos{
+.now{
 	@include container-fondo();
-		background: url('../assets/img/img_city.jpg');
-		background-size: cover;
-		background-attachment: fixed;
-		background-repeat: no-repeat;
+	background: url('../assets/img/img_city.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	height: 1000px;
+	.fondo{
+		padding: 50px 50px 10px;
+	}
 	img{
 		width: 100%;
 	}
@@ -101,7 +106,7 @@ nav{
 	}
 }
 
-.seccion-tres{
+.products{
 	@include seccion-gris();
 	.z-depth-2{
 		background-color: #fff;
@@ -145,7 +150,7 @@ nav{
 	}
 }
 
-.seccion-cuatro{
+.portfolio{
 	@include textos();
 	@include container-esp();
 	img{
@@ -153,7 +158,7 @@ nav{
 		border-radius: 10px;
 	}
 }
-.seccion-cinco{
+.team{
 	@include textos();
 	@include container-esp();
 	.s12{
@@ -166,9 +171,6 @@ nav{
 		width: 100%;
 		border-radius: 5px;
 	}
-	h5{
-		@include texto-titulos();
-	}
 	ul{
 		li{
 			display: inline-block;
@@ -178,9 +180,7 @@ nav{
 			}
 		}
 	}
-	h6{
-		color: #777777;
-	}
+
 	.fa-facebook{
 		color: #3B5998;
 	}
@@ -204,7 +204,7 @@ nav{
 	}
 }
 
-.seccion-seis{
+.choose-plan{
 	@include textos();
 	@include seccion-gris();
 	.texts{
@@ -216,7 +216,7 @@ nav{
 		}
 	}
 
-	.z-depth-2{
+	.z-depth-4{
 		background-color: #fff;
 		border-radius: 10px;
 	}
@@ -256,6 +256,72 @@ nav{
 
 	.btn{
 		@include botones();
-		padding: 0px 30px;
+		padding: $boton-plano;
+	}
+}
+.our-clients{
+	@include textos();
+	@include container-esp();
+	img{
+		width: 25%;
+		border-radius: 100%;
+	}
+
+}
+.subscribe{
+	@include container-fondo();
+	background: url('../assets/img/about.jpg');
+	background-size: cover;
+	background-position:center top; 
+	background-repeat: no-repeat;
+	text-align: center;
+
+	height: 350px;
+
+	.z-depth-4{
+		margin: 0 auto;
+		background-color: #fff;
+		max-width: 600px;
+		border-radius: 10px;	
+		i{
+			color: #212121;
+			font-size: 20px;
+			margin-top: 15px;
+		}
+		.btn{
+			margin-top: 20px;
+			@include botones();
+			padding: $boton-plano;
+		}
+			/* label color */
+	   .input-field label {
+	     color: $color-texto-primario;
+	     font-size: 12px;
+	     padding-top: 5px;
+	   }
+	   /* label focus color */
+	   .input-field input[type=text]:focus + label {
+	     color: $color-primario;
+	   }
+	   /* label underline focus color */
+	   .input-field input[type=text]:focus {
+	     border-bottom: 1px solid $color-primario;
+	     box-shadow: 0 1px 0 0 $color-primario;
+	   }
+	   /* valid color */
+	   .input-field input[type=text].valid {
+	     border-bottom: 1px solid $color-primario;
+	     box-shadow: 0 1px 0 0 $color-primario;
+	   }
+	   /* invalid color */
+	   .input-field input[type=text].invalid {
+	     border-bottom: 1px solid $color-primario;
+	     box-shadow: 0 1px 0 0 $color-primario;
+	   }
+	   /* icon prefix focus color */
+	   .input-field .prefix.active {
+	     color: $color-primario;
+	   }
+        
 	}
 }
