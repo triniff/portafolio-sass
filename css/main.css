@@ -6887,14 +6887,14 @@ nav {
     background-color: #fff;
     border-radius: 10px;
     max-width: 310px;
-    margin: 60px 20px 10px; }
+    margin: 60px 30px 10px; }
     .seccion-tres .z-depth-2 .row img {
       width: 100%;
       margin: 0 auto;
       padding: 0;
       text-align: center;
       margin-top: -40px; }
-  .seccion-tres .z-depth-2::last-child {
+  .seccion-tres .z-depth-2:last-child {
     margin: 60px 0; }
   .seccion-tres h6 {
     color: #e91e63;
@@ -7002,5 +7002,73 @@ nav {
     color: #CC2127; }
   .seccion-cinco .fa-google-plus {
     color: #DD4B39; }
+
+.seccion-seis {
+  color: #a1a1a1;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+  background-color: #F0F0F0;
+  text-align: center;
+  padding: 80px 50px;
+  color: #a1a1a1;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300; }
+  .seccion-seis h1 {
+    font-family: "PT Serif", serif;
+    color: #3c4858;
+    font-size: 20px;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center; }
+  .seccion-seis h1 {
+    font-family: "PT Serif", serif;
+    color: #3c4858;
+    font-size: 20px;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center; }
+  .seccion-seis .texts {
+    text-align: left;
+    padding-right: 50px; }
+    .seccion-seis .texts h1 {
+      text-align: left;
+      padding-right: 50px; }
+  .seccion-seis .z-depth-2 {
+    background-color: #fff;
+    border-radius: 10px; }
+  .seccion-seis .buy {
+    height: auto;
+    padding: 40px 70px;
+    margin: 0 40px;
+    max-width: 350px; }
+    .seccion-seis .buy h3 {
+      color: #3c4858;
+      font-weight: 900; }
+      .seccion-seis .buy h3 sub {
+        color: #a1a1a1;
+        font-size: 20px;
+        font-weight: 300;
+        font-family: "PT Serif", serif; }
+      .seccion-seis .buy h3 sup {
+        top: -8px;
+        font-size: 25px;
+        color: #a1a1a1;
+        font-family: "PT Serif", serif; }
+    .seccion-seis .buy p {
+      border-bottom: 1px solid #a1a1a1;
+      padding: 5px 0; }
+      .seccion-seis .buy p span {
+        color: #3c4858;
+        font-weight: 900; }
+    .seccion-seis .buy p:last-of-type {
+      border-bottom: none; }
+  .seccion-seis .btn, .seccion-seis .btn-large {
+    padding: 10px 25px;
+    border-radius: 5px;
+    height: auto;
+    background-color: #e91e63;
+    padding: 0px 30px; }
 
 /*# sourceMappingURL=main.css.map */

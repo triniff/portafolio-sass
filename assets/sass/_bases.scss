@@ -107,7 +107,7 @@ nav{
 		background-color: #fff;
 		border-radius: 10px;
 		max-width: 310px;
-		margin: 60px 20px 10px;
+		margin: 60px 30px 10px;
 		.row{
 			img{
 					width: 100%;
@@ -118,7 +118,7 @@ nav{
 			}
 		}
 	}
-	.z-depth-2::last-child{
+	.z-depth-2:last-child{
 		margin: 60px 0;
 	}
 
@@ -201,5 +201,61 @@ nav{
 	}
 	.fa-google-plus{
 		color: #DD4B39;
+	}
+}
+
+.seccion-seis{
+	@include textos();
+	@include seccion-gris();
+	.texts{
+		text-align: left;
+		padding-right: 50px;
+		h1{
+			text-align: left;
+			padding-right: 50px;
+		}
+	}
+
+	.z-depth-2{
+		background-color: #fff;
+		border-radius: 10px;
+	}
+	.buy{
+		height: auto;
+		padding: 40px 70px;
+		margin: 0 40px;
+		max-width: 350px;
+		h3{
+			color: $color-esp-titulos;
+			font-weight: 900;
+			sub{
+				color: $color-texto-primario;
+				font-size: 20px;
+				font-weight: 300;
+				font-family: $fuente-serif;
+			}
+			sup{
+				top: -8px;
+				font-size: 25px;
+				color: $color-texto-primario;
+				font-family: $fuente-serif;
+			}
+		}
+		p{
+			border-bottom: 1px solid $color-texto-primario;
+			padding: 5px 0;
+			span{
+				color: $color-esp-titulos;
+				font-weight: 900;
+			}
+		}
+		p:last-of-type {
+    			border-bottom: none;
+			}
+	}
+
+	.btn{
+		@include botones();
+		padding: 0px 30px;
 	}
 }
