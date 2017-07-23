@@ -3,6 +3,5 @@ $(document).ready(function(){
 
 	// Destroy carousel
 	$('.slider').carousel('destroy');
-      
+
 });
-        

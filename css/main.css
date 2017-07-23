@@ -6922,6 +6922,8 @@ nav {
       padding: 0;
       text-align: center;
       margin-top: -40px; }
+    .products .z-depth-2 .row img:hover {
+      margin-top: -80px; }
   .products .z-depth-2:last-child {
     margin: 60px 0; }
   .products h6 {
@@ -6985,6 +6987,54 @@ nav {
   .portfolio img {
     width: 100%;
     border-radius: 10px; }
+  .portfolio .image-hover-text-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    transition: all 0.2s linear; }
+  .portfolio .image-hover-image {
+    display: block; }
+  .portfolio .image-hover-text {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 98.5%;
+    margin: 0 auto;
+    opacity: 0;
+    cursor: default;
+    transition: opacity 0.2s linear; }
+  .portfolio .image-hover-text:hover {
+    opacity: 1; }
+  .portfolio .image-hover-text-bubble {
+    position: relative;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    right: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5960784314);
+    border-radius: 0%;
+    margin: 0 auto;
+    padding: 30% 0px;
+    overflow: hidden;
+    font-size: 17px;
+    text-align: center;
+    word-wrap: break-word;
+    border-radius: 10px; }
+  .portfolio .image-hover-text .image-hover-text-title {
+    font-size: 25px;
+    display: block; }
+    .portfolio .image-hover-text .image-hover-text-title h5 {
+      color: #fff; }
+  .portfolio .btn, .portfolio .btn-large {
+    border-radius: 40px; }
+  .portfolio .rosa {
+    background-color: #e91e63; }
+  .portfolio .calipso {
+    background-color: #00bcd4; }
+  .portfolio .naranja {
+    background-color: #f34336; }
 
 .team {
   color: #a1a1a1;
@@ -7133,6 +7183,8 @@ nav {
     height: auto;
     background-color: #e91e63;
     padding: 0px 30px; }
+  .choose-plan .btn:hover, .choose-plan .btn-large:hover {
+    background-color: #00bcd4; }
 
 .our-clients {
   color: #a1a1a1;
@@ -7240,6 +7292,8 @@ nav {
       height: auto;
       background-color: #e91e63;
       padding: 0px 30px; }
+    .subscribe .z-depth-4 .btn:hover, .subscribe .modal .btn:hover, .subscribe .z-depth-4 .btn-large:hover, .subscribe .modal .btn-large:hover {
+      background-color: #00bcd4; }
 
 .blog {
   color: #a1a1a1;
@@ -7373,6 +7427,8 @@ nav {
     padding: 0px 30px;
     text-align: left;
     margin-bottom: 40px; }
+  .contact .btn:hover, .contact .btn-large:hover {
+    background-color: #00bcd4; }
 
 .footer {
   color: #fff;

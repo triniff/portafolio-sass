@@ -10,7 +10,6 @@ nav{
     border: transparent;
     padding: 0 40px;
     box-shadow:none;
-
     .brand-logo{
     	font-size: 20px
     }
@@ -39,7 +38,6 @@ nav{
 		}
 	}
 }
-
 .slider{ 
 	.slides{ 
 		h5{
@@ -115,11 +113,14 @@ nav{
 		margin: 60px 30px 10px;
 		.row{
 			img{
-					width: 100%;
-					margin: 0 auto;
-					padding: 0;
-					text-align: center;
-					margin-top: -40px;
+				width: 100%;
+				margin: 0 auto;
+				padding: 0;
+				text-align: center;
+				margin-top: -40px;
+			}
+			img:hover{
+				margin-top: -80px;
 			}
 		}
 	}
@@ -157,6 +158,76 @@ nav{
 		width: 100%;
 		border-radius: 10px;
 	}
+	.image-hover-text-container 
+	{
+	  position: relative;
+	  display: inline-block;
+	  width: 100%;
+
+	  transition: all 0.2s linear;
+	}
+
+	.image-hover-image 
+	{
+	 display: block;
+	}
+
+	.image-hover-text 
+	{
+	  position: absolute;
+	  top: 0;
+	  width: 100%;  
+	  height: 98.5%;
+	  margin: 0 auto;
+	  opacity: 0;
+	  cursor: default;
+	  transition: opacity 0.2s linear;
+	}
+	.image-hover-text:hover 
+	{
+	  opacity: 1;
+	}
+
+
+	.image-hover-text-bubble 
+	{
+	  position: relative;
+	  box-sizing: border-box;
+	  top: 0; left: 0; right: 100%;
+	  height: 100%;
+	  text-align: center;
+	  background: rgba(0, 0, 0, 0.596078431372549);
+	  border-radius: 0%;
+	  margin: 0 auto;
+	  padding: 30% 0px;
+	  overflow: hidden;
+	  font-size: 17px;
+	  text-align: center;
+	  word-wrap: break-word;
+	  border-radius: 10px;
+	}
+
+	.image-hover-text .image-hover-text-title
+	{
+	  font-size: 25px;
+	  display: block;
+	  h5{
+	  	  color: #fff;
+	  }
+	}
+	.btn{
+		border-radius: 40px;
+	}
+	.rosa{
+		background-color: $color-primario;
+	}
+	.calipso{
+		background-color: $color-secundario;
+	}
+	.naranja{
+		background-color: #f34336;
+	}
+
 }
 .team{
 	@include textos();
@@ -258,6 +329,9 @@ nav{
 		@include botones();
 		padding: $boton-plano;
 	}
+	.btn:hover{
+		background-color: $color-secundario;
+	}
 }
 .our-clients{
 	@include textos();
@@ -294,7 +368,9 @@ nav{
 			@include botones();
 			padding: $boton-plano;
 		}
-        
+        .btn:hover{
+			background-color: $color-secundario;
+		}
 	}
 }
 
@@ -369,6 +445,10 @@ nav{
 		text-align: left;
 		margin-bottom: 40px;
 	}
+	.btn:hover{
+			background-color: $color-secundario;
+		}
+
 }
 .footer{
 	@include container-fondo();
