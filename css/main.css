@@ -7202,16 +7202,33 @@ nav {
     background-color: rgba(0, 0, 0, 0.66);
     padding: 50px 0; }
   .subscribe .z-depth-4, .subscribe .modal {
-    margin: 0 auto;
-    background-color: #fff;
-    max-width: 600px;
-    border-radius: 10px;
     /* label color */
     /* label focus color */
     /* label underline focus color */
     /* valid color */
     /* invalid color */
-    /* icon prefix focus color */ }
+    /* icon prefix focus color */
+    margin: 0 auto;
+    background-color: #fff;
+    max-width: 600px;
+    border-radius: 10px; }
+    .subscribe .z-depth-4 .input-field label, .subscribe .modal .input-field label {
+      color: #a1a1a1;
+      font-size: 12px;
+      padding-top: 5px; }
+    .subscribe .z-depth-4 .input-field input[type=text]:focus + label, .subscribe .modal .input-field input[type=text]:focus + label, .subscribe .z-depth-4 .input-field textarea[type=text]:focus + label, .subscribe .modal .input-field textarea[type=text]:focus + label {
+      color: #e91e63; }
+    .subscribe .z-depth-4 .input-field input[type=text]:focus, .subscribe .modal .input-field input[type=text]:focus, .subscribe .z-depth-4 .input-field textarea[type=text]:focus, .subscribe .modal .input-field textarea[type=text]:focus {
+      border-bottom: 1px solid #e91e63;
+      box-shadow: 0 1px 0 0 #e91e63; }
+    .subscribe .z-depth-4 .input-field input[type=text].valid, .subscribe .modal .input-field input[type=text].valid, .subscribe .z-depth-4 .input-field textarea[type=text].valid, .subscribe .modal .input-field textarea[type=text].valid {
+      border-bottom: 1px solid #e91e63;
+      box-shadow: 0 1px 0 0 #e91e63; }
+    .subscribe .z-depth-4 .input-field input[type=text].invalid, .subscribe .modal .input-field input[type=text].invalid, .subscribe .z-depth-4 .input-field textarea[type=text].invalid, .subscribe .modal .input-field textarea[type=text].invalid {
+      border-bottom: 1px solid #e91e63;
+      box-shadow: 0 1px 0 0 #e91e63; }
+    .subscribe .z-depth-4 .input-field .prefix.active, .subscribe .modal .input-field .prefix.active {
+      color: #e91e63; }
     .subscribe .z-depth-4 i, .subscribe .modal i {
       color: #212121;
       font-size: 20px;
@@ -7223,22 +7240,190 @@ nav {
       height: auto;
       background-color: #e91e63;
       padding: 0px 30px; }
-    .subscribe .z-depth-4 .input-field label, .subscribe .modal .input-field label {
-      color: #a1a1a1;
-      font-size: 12px;
-      padding-top: 5px; }
-    .subscribe .z-depth-4 .input-field input[type=text]:focus + label, .subscribe .modal .input-field input[type=text]:focus + label {
+
+.blog {
+  color: #a1a1a1;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+  width: 100%;
+  padding: 80px 50px;
+  color: #a1a1a1;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300; }
+  .blog h1 {
+    font-family: "PT Serif", serif;
+    color: #3c4858;
+    font-size: 20px;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center; }
+  .blog h5 {
+    font-family: "PT Serif", serif;
+    color: #3c4858;
+    font-size: 20px;
+    font-weight: bold; }
+  .blog h6 {
+    color: #777777; }
+  .blog h1 {
+    font-family: "PT Serif", serif;
+    color: #3c4858;
+    font-size: 20px;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center; }
+  .blog h5 {
+    font-family: "PT Serif", serif;
+    color: #3c4858;
+    font-size: 20px;
+    font-weight: bold; }
+  .blog h6 {
+    color: #777777; }
+  .blog .s4 {
+    text-align: left; }
+    .blog .s4 img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px; }
+    .blog .s4 .rosa-text {
       color: #e91e63; }
-    .subscribe .z-depth-4 .input-field input[type=text]:focus, .subscribe .modal .input-field input[type=text]:focus {
-      border-bottom: 1px solid #e91e63;
-      box-shadow: 0 1px 0 0 #e91e63; }
-    .subscribe .z-depth-4 .input-field input[type=text].valid, .subscribe .modal .input-field input[type=text].valid {
-      border-bottom: 1px solid #e91e63;
-      box-shadow: 0 1px 0 0 #e91e63; }
-    .subscribe .z-depth-4 .input-field input[type=text].invalid, .subscribe .modal .input-field input[type=text].invalid {
-      border-bottom: 1px solid #e91e63;
-      box-shadow: 0 1px 0 0 #e91e63; }
-    .subscribe .z-depth-4 .input-field .prefix.active, .subscribe .modal .input-field .prefix.active {
-      color: #e91e63; }
+    .blog .s4 .calipso-text {
+      color: #00bcd4; }
+    .blog .s4 .naranja-text {
+      color: #f34336; }
+    .blog .s4 a {
+      color: #3c4858; }
+
+.contact {
+  color: #fff;
+  width: 100%;
+  position: relative;
+  /* label color */
+  /* label focus color */
+  /* label underline focus color */
+  /* valid color */
+  /* invalid color */
+  /* icon prefix focus color */
+  background: url("../assets/img/img_city.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  text-align: left;
+  height: 650px; }
+  .contact h4 {
+    font-family: "PT Serif", serif;
+    font-weight: bold;
+    font-size: 40px; }
+  .contact .fondo {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.66);
+    padding: 50px 0; }
+  .contact .input-field label {
+    color: #a1a1a1;
+    font-size: 12px;
+    padding-top: 5px; }
+  .contact .input-field input[type=text]:focus + label, .contact .input-field textarea[type=text]:focus + label {
+    color: #e91e63; }
+  .contact .input-field input[type=text]:focus, .contact .input-field textarea[type=text]:focus {
+    border-bottom: 1px solid #e91e63;
+    box-shadow: 0 1px 0 0 #e91e63; }
+  .contact .input-field input[type=text].valid, .contact .input-field textarea[type=text].valid {
+    border-bottom: 1px solid #e91e63;
+    box-shadow: 0 1px 0 0 #e91e63; }
+  .contact .input-field input[type=text].invalid, .contact .input-field textarea[type=text].invalid {
+    border-bottom: 1px solid #e91e63;
+    box-shadow: 0 1px 0 0 #e91e63; }
+  .contact .input-field .prefix.active {
+    color: #e91e63; }
+  .contact h6 {
+    font-family: "PT Serif", serif;
+    font-weight: bold;
+    font-size: 20px; }
+  .contact i {
+    font-size: 40px; }
+  .contact .fondo {
+    padding: 80px 50px 10px; }
+  .contact .z-depth-4, .contact .modal {
+    border-radius: 5px; }
+  .contact .contat-input {
+    background-color: #fff;
+    width: 70%;
+    padding: 0 20px;
+    margin: 0 auto; }
+    .contact .contat-input .contact-us {
+      background-color: #e91e63;
+      text-align: center;
+      position: relative;
+      top: -20px; }
+      .contact .contat-input .contact-us h4 {
+        font-size: 25px;
+        padding: 20px; }
+  .contact .btn, .contact .btn-large {
+    padding: 10px 25px;
+    border-radius: 5px;
+    height: auto;
+    background-color: #e91e63;
+    padding: 0px 30px;
+    text-align: left;
+    margin-bottom: 40px; }
+
+.footer {
+  color: #fff;
+  width: 100%;
+  position: relative;
+  background-color: #323437;
+  padding: 80px 50px 10px; }
+  .footer h4 {
+    font-family: "PT Serif", serif;
+    font-weight: bold;
+    font-size: 40px; }
+  .footer .fondo {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.66);
+    padding: 50px 0; }
+  .footer .s4 h6 {
+    font-family: "PT Serif", serif;
+    font-weight: bold;
+    font-size: 20px; }
+  .footer .s4 p, .footer .s4 a {
+    color: #a1a1a1;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 300; }
+  .footer .s4 a {
+    font-size: 10px;
+    font-weight: 900; }
+  .footer .s4 .s3 {
+    padding: 20px 10px; }
+    .footer .s4 .s3 img {
+      width: 100%;
+      border-radius: 5px; }
+  .footer .nav-footer {
+    border-top: 1px solid #a1a1a1;
+    padding-top: 30px; }
+    .footer .nav-footer ul {
+      margin-top: 0; }
+      .footer .nav-footer ul li {
+        display: inline-block;
+        padding: 0 20px;
+        color: #a1a1a1; }
+      .footer .nav-footer ul li a:hover {
+        color: #e91e63; }
+    .footer .nav-footer a {
+      padding-top: 20px;
+      color: #a1a1a1; }
 
 /*# sourceMappingURL=main.css.map */

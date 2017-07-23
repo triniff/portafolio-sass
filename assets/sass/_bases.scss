@@ -279,6 +279,7 @@ nav{
 	height: 350px;
 
 	.z-depth-4{
+		@include cambio-inputs();
 		margin: 0 auto;
 		background-color: #fff;
 		max-width: 600px;
@@ -293,35 +294,128 @@ nav{
 			@include botones();
 			padding: $boton-plano;
 		}
-			/* label color */
-	   .input-field label {
-	     color: $color-texto-primario;
-	     font-size: 12px;
-	     padding-top: 5px;
-	   }
-	   /* label focus color */
-	   .input-field input[type=text]:focus + label {
-	     color: $color-primario;
-	   }
-	   /* label underline focus color */
-	   .input-field input[type=text]:focus {
-	     border-bottom: 1px solid $color-primario;
-	     box-shadow: 0 1px 0 0 $color-primario;
-	   }
-	   /* valid color */
-	   .input-field input[type=text].valid {
-	     border-bottom: 1px solid $color-primario;
-	     box-shadow: 0 1px 0 0 $color-primario;
-	   }
-	   /* invalid color */
-	   .input-field input[type=text].invalid {
-	     border-bottom: 1px solid $color-primario;
-	     box-shadow: 0 1px 0 0 $color-primario;
-	   }
-	   /* icon prefix focus color */
-	   .input-field .prefix.active {
-	     color: $color-primario;
-	   }
         
 	}
+}
+
+.blog{
+	@include textos();
+	@include container-esp();
+	.s4{
+		text-align: left;
+		img{
+			width: 100%;
+			border-radius: 10px;
+			margin-bottom: 10px;
+		}
+		.rosa-text{
+			color: $color-primario;
+		}
+		.calipso-text{
+			color: $color-secundario;
+		}
+		.naranja-text{
+			color: #f34336;
+		}
+		a{
+			color: $color-esp-titulos;
+		}
+	}
+
+}
+.contact{
+	@include container-fondo();
+	@include cambio-inputs();
+	background: url('../assets/img/img_city.jpg');
+	background-size: cover;
+	background-position:center top; 
+	background-repeat: no-repeat;
+	text-align: left;
+
+	height: 650px;
+	h6{
+		font-family: $fuente-serif;
+		font-weight: bold;
+		font-size: 20px;
+	}
+	i{
+		font-size: 40px;
+	}
+	.fondo{
+		padding: 80px 50px 10px;
+	}
+	.z-depth-4{
+		border-radius: 5px;
+	}
+	.contat-input{
+		background-color: #fff;
+		width: 70%;
+		padding: 0 20px;
+		margin: 0 auto;
+		.contact-us{
+			background-color: $color-primario;
+			text-align: center;
+			position: relative;
+			top: -20px;
+			h4{
+				font-size: 25px;
+				padding:20px;
+			}
+		}
+	}
+	.btn{
+		@include botones();
+		padding: $boton-plano;
+		text-align: left;
+		margin-bottom: 40px;
+	}
+}
+.footer{
+	@include container-fondo();
+	background-color:#323437;
+	padding: 80px 50px 10px;
+	.s4{
+		h6{
+			font-family: $fuente-serif;
+			font-weight: bold;
+			font-size: 20px;
+		}
+		p, a{
+			color: $color-texto-primario;
+			text-align: left;
+			font-size: 15px;
+			font-weight: 300;
+		}
+		a{
+			font-size: 10px;
+			font-weight: 900;
+		}
+		.s3	{
+			padding: 20px 10px;
+			img{
+				width: 100%;
+				border-radius: 5px;
+			}
+		}
+	}
+	.nav-footer{
+		border-top: 1px solid $color-texto-primario;
+		padding-top: 30px;
+		ul{
+			margin-top: 0;
+			li{
+				display: inline-block;
+				padding: 0 20px;
+				color: $color-texto-primario;
+			}
+			li a:hover{
+				color: $color-primario;
+			}
+		}
+		a{
+			padding-top: 20px;
+			color: $color-texto-primario;
+		}
+	}
+	
 }
