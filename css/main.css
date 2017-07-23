@@ -6825,11 +6825,23 @@ nav {
   text-align: center;
   font-size: 15px;
   font-weight: 300; }
+  .seccion-uno h1 {
+    font-family: "PT Serif", serif;
+    color: #3c4858;
+    font-size: 20px;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center; }
   .seccion-uno h4 {
     font-family: "PT Serif", serif;
     color: #3c4858;
     font-size: 20px;
     font-weight: bold; }
+  .seccion-uno p {
+    color: #a1a1a1;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300; }
   .seccion-uno .uno {
     color: #e91e63; }
   .seccion-uno .dos {
@@ -6841,7 +6853,7 @@ nav {
   padding: 50px 50px 10px;
   color: #fff;
   width: 100%;
-  background: url("../img/img_city.jpg");
+  background: url("../assets/img/img_city.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat; }
@@ -6859,18 +6871,18 @@ nav {
 .seccion-tres {
   background-color: #F0F0F0;
   text-align: center;
-  padding: 80px 50px; }
+  padding: 80px 50px;
+  color: #a1a1a1;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300; }
   .seccion-tres h1 {
     font-family: "PT Serif", serif;
     color: #3c4858;
     font-size: 20px;
     font-weight: bold;
-    font-size: 40px; }
-  .seccion-tres p {
-    color: #a1a1a1;
-    text-align: center;
-    font-size: 15px;
-    font-weight: 300; }
+    font-size: 40px;
+    text-align: center; }
   .seccion-tres .z-depth-2 {
     background-color: #fff;
     border-radius: 10px;
@@ -6902,5 +6914,34 @@ nav {
     float: right;
     margin: 10px 0px;
     color: #a1a1a1; }
+
+.seccion-cuatro {
+  color: #a1a1a1;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+  width: 100%;
+  padding: 80px 50px;
+  color: #a1a1a1;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300; }
+  .seccion-cuatro h1 {
+    font-family: "PT Serif", serif;
+    color: #3c4858;
+    font-size: 20px;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center; }
+  .seccion-cuatro h1 {
+    font-family: "PT Serif", serif;
+    color: #3c4858;
+    font-size: 20px;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center; }
+  .seccion-cuatro img {
+    width: 100%;
+    border-radius: 10px; }
 
 /*# sourceMappingURL=main.css.map */

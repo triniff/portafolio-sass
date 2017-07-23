@@ -67,6 +67,12 @@ nav{
 	h4{
 		@include texto-titulos();
 	}
+	p{
+		color: $color-texto-primario;
+		text-align: center;
+		font-size: 15px;
+		font-weight: 300;
+	}
 	.uno{
 		color: $color-primario;
 	}
@@ -79,7 +85,7 @@ nav{
 }
 .seccion-dos{
 	@include container-fondo();
-		background: url('../img/img_city.jpg');
+		background: url('../assets/img/img_city.jpg');
 		background-size: cover;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
@@ -136,5 +142,14 @@ nav{
 			margin: 10px 0px;
 			color: $color-texto-primario;
 		}
+	}
+}
+
+.seccion-cuatro{
+	@include textos();
+	@include container-esp();
+	img{
+		width: 100%;
+		border-radius: 10px;
 	}
 }
