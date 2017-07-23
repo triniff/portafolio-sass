@@ -153,3 +153,53 @@ nav{
 		border-radius: 10px;
 	}
 }
+.seccion-cinco{
+	@include textos();
+	@include container-esp();
+	.s12{
+		margin-bottom: 40px;
+	}
+	.s6{
+		text-align: left;
+	}
+	img{
+		width: 100%;
+		border-radius: 5px;
+	}
+	h5{
+		@include texto-titulos();
+	}
+	ul{
+		li{
+			display: inline-block;
+			padding: 40px 10px;
+			i{
+				font-size: 16px;
+			}
+		}
+	}
+	h6{
+		color: #777777;
+	}
+	.fa-facebook{
+		color: #3B5998;
+	}
+	.fa-twitter{
+		color: #55ACEE;
+	}
+	.fa-linkedin{
+		color: #0976B4;
+	}
+	.fa-github-square{
+		color: #333333;
+	}
+	.fa-dribbble{
+		color: #EA4C89;
+	}
+	.fa-pinterest{
+		color: #CC2127;
+	}
+	.fa-google-plus{
+		color: #DD4B39;
+	}
+}
